@@ -94,10 +94,9 @@ export default function Form() {
           </div>
         </div>
         <Button
-          children={'Kirim Ucapan'}
           className="w-full mt-4 bg-blue-denim text-white font-bold py-2 px-4 rounded"
           onClick={handleSubmit}
-        />
+        >Kirim Ucapan</Button>
       </form>
       <div className="mt-10 max-h-64 overflow-y-auto">
         {submissions.map((submission) => (
