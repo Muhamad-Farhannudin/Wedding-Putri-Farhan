@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-export default function Button({ children, className, link, classNameIcon, onClick, loading, disabled }) {
+export default function Button({ children, className, link, classNameIcon, onClick, disabled }) {
   return (
     link ? (
       <Link href={link}>
@@ -11,7 +11,7 @@ export default function Button({ children, className, link, classNameIcon, onCli
         disabled={disabled}
         >
           {classNameIcon}
-          {loading ? 'Mengirim...' : children}
+          {children}
         </button>
       </Link>
     ) : (

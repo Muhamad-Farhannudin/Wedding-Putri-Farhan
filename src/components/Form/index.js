@@ -97,8 +97,6 @@ export default function Form() {
           children={'Kirim Ucapan'}
           className="w-full mt-4 bg-blue-denim text-white font-bold py-2 px-4 rounded"
           onClick={handleSubmit}
-          loading={loading} // Menambahkan prop loading
-          disabled={loading} // Menambahkan prop disabled
         />
       </form>
       <div className="mt-10 max-h-64 overflow-y-auto">
