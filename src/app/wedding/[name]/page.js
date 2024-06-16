@@ -12,7 +12,7 @@ import Form from '@/components/Form';
 import { Fade } from 'react-awesome-reveal';
 import Sound from '@/components/Sound';
 
-export default function Home({params}) {
+export default function Home({ params }) {
   const name = decodeURIComponent(params.name);
   const [showInvitation, setShowInvitation] = useState(false);
   const accounts = [
@@ -131,11 +131,10 @@ export default function Home({params}) {
                 <h1 className='font-waterfall text-5xl'>Putri Lisda Lesmana</h1>
                 <h3 className='font-serif text-lg mt-3'>Putri Ke-1 Dari Bpk. Lesmana & Ibu Yanti Nurhayati</h3>
                 <Button
-                  children={'Instagram'}
                   link='https://www.instagram.com/putrilisdaa/'
                   className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                   classNameIcon={<InstagramIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-                />
+                >Instagram</Button>
               </div>
             </div>
           </Fade>
@@ -145,11 +144,10 @@ export default function Home({params}) {
                 <h1 className='font-waterfall text-5xl'>Muhamad Farhannudin</h1>
                 <h3 className='font-serif text-lg mt-3'>Putra Ke-2 Dari Bpk. Juna Rahmat & Ibu Nina Firmaeni</h3>
                 <Button
-                  children={'Instagram'}
                   link='https://www.instagram.com/m_farhan2908/'
                   className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                   classNameIcon={<InstagramIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-                />
+                >Instagram</Button>
               </div>
               <Image
                 width={100}
@@ -176,11 +174,10 @@ export default function Home({params}) {
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
               <h1 className='font-elsie font-normal text-base text-center'>Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;</h1>
               <Button
-                children={'Kunjungi Lokasi'}
                 link='https://maps.app.goo.gl/Pj5AfYzDTcvMHQUk7'
                 className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                 classNameIcon={<MapsIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-              />
+              >Kunjungi Lokasi</Button>
             </div>
           </Fade>
           <Fade direction="up" duration={1500}>
@@ -192,13 +189,14 @@ export default function Home({params}) {
                 <MapsIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all'} />
               </div>
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
-              <h1 className='font-elsie font-normal text-base text-center'>Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;</h1>
+              <h1 className='font-elsie font-normal text-base text-center'>
+                Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;
+              </h1>
               <Button
-                children={'Kunjungi Lokasi'}
                 link='https://maps.app.goo.gl/Pj5AfYzDTcvMHQUk7'
                 className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                 classNameIcon={<MapsIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-              />
+              >Kunjungi Lokasi</Button>
             </div>
           </Fade>
         </div>
@@ -245,11 +243,10 @@ export default function Home({params}) {
               <h1 className="font-poppins font-medium text-2xl">{account.number}</h1>
               <h1 className='font-elsie font-normal text-2xl text-center'>a.n {account.name}</h1>
               <Button
-                children={'Salin No. Rek'}
                 onClick={() => copyToClipboard(account.number, 'account')}
                 className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                 classNameIcon={<CopyIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-              />
+              >Salin No. Rek</Button>
             </div>
           ))}
           {alertVisible && (
@@ -264,11 +261,10 @@ export default function Home({params}) {
               <h1 className='font-elsie font-normal text-xl text-center text-white px-3'>Kirim Hadiah Fisik</h1>
               <h1 className='font-elsie font-normal text-lg text-center text-white px-3'>{address}</h1>
               <Button
-                children={'Salin Alamat'}
                 onClick={() => copyToClipboard(address, 'address')}
                 className='bg-white mt-5 hover:bg-blue-denim transition-all button-wrapper text-blue-denim hover:text-white z-50 group'
                 classNameIcon={<CopyIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-              />
+              >Salin Alamat</Button>
             </div>
           </Fade>
 
