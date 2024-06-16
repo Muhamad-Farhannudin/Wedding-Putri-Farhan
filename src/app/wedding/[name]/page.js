@@ -172,7 +172,9 @@ export default function Home({ params }) {
                 <MapsIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all'} />
               </div>
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
-              <h1 className='font-elsie font-normal text-base text-center'>Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;</h1>
+              <h1 className='font-elsie font-normal text-base text-center'>
+                Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;
+              </h1>
               <Button
                 link='https://maps.app.goo.gl/Pj5AfYzDTcvMHQUk7'
                 className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
