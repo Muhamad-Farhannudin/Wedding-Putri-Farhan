@@ -190,7 +190,7 @@ export default function Home({ params }) {
               </div>
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
               <h1 className='font-elsie font-normal text-base text-center'>
-                Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;
+                Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat / Lapang Volly
               </h1>
               <Button
                 link='https://maps.app.goo.gl/Pj5AfYzDTcvMHQUk7'
