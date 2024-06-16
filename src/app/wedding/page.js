@@ -274,7 +274,7 @@ export default function Home({ params }) {
         <div className="max-w-7xl mx-auto h-auto py-10 bg-white">
           <Fade direction="down" duration={2000} cascade>
             <h1 className='text-blue-denim font-bold font-serif text-3xl text-center'>Ucapan & Doa Restu</h1>
-            <h1 className='text-blue-denim font-elsie font-normal text-xl text-center px-10 mt-3'>Berikan Do'a Terbaik Untuk Momen Bahagia Kami</h1>
+            <h1 className='text-blue-denim font-elsie font-normal text-xl text-center px-10 mt-3'>Berikan Doa Terbaik Untuk Momen Bahagia Kami</h1>
           </Fade>
           <Form />
         </div>
