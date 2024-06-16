@@ -112,7 +112,7 @@ export default function Home({ params }) {
               </div>
             </div>
             <h2 className="mt-3 text-base font-normal font-serif text-slate-700">
-              " Dan segala sesuatu Kami ciptakan berpasang-pasangan supaya kamu mengingat kebesaran Allah. " <br /> <br />
+              &quot; Dan segala sesuatu Kami ciptakan berpasang-pasangan supaya kamu mengingat kebesaran Allah. &quot; <br /> <br />
               Q.S. Az-Zariyat: 49
             </h2>
           </div>
@@ -190,7 +190,7 @@ export default function Home({ params }) {
               </div>
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
               <h1 className='font-elsie font-normal text-base text-center'>
-                Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat / Lapang Volly
+                Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;
               </h1>
               <Button
                 link='https://maps.app.goo.gl/Pj5AfYzDTcvMHQUk7'
