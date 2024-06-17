@@ -12,8 +12,7 @@ import Form from '@/components/Form';
 import { Fade } from 'react-awesome-reveal';
 import Sound from '@/components/Sound';
 
-export default function Home({ params }) {
-  const name = decodeURIComponent(params.name);
+export default function Home() {
   const [showInvitation, setShowInvitation] = useState(false);
   const accounts = [
     { number: '1390611095', name: 'Muhammad Farhannudin', image: '/images/Bank.png' },
@@ -54,7 +53,7 @@ export default function Home({ params }) {
           </div>
           <div className="mt-5">
             <h3 className="font-elsie text-lg">Kepada Yth: Bapak/Ibu/Saudara/I</h3>
-            <h2 className="font-poppins text-2xl mt-4">{name}</h2>
+            <h2 className="font-poppins text-2xl mt-4"></h2>
             <button
               onClick={() => setShowInvitation(true)}
               className="font-elsie tex-lg bg-blue-denim px-8 py-3 mt-4 rounded-2xl"
