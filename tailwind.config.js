@@ -17,7 +17,7 @@ module.exports = {
         rochester: ['var(--font-rochester)'],
       },
       colors: {
-        'blue-denim': '#9eabdf',
+        'blue-denim': '#a2b0ca',
       },
     },
   },

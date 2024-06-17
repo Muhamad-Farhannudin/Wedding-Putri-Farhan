@@ -264,9 +264,11 @@ export default function Home({ params }) {
               <h1 className='font-elsie font-normal text-lg text-center text-white px-3'>{address}</h1>
               <Button
                 onClick={() => copyToClipboard(address, 'address')}
-                className='bg-white mt-5 hover:bg-blue-denim transition-all button-wrapper text-blue-denim hover:text-white z-50 group'
+                className='bg-white mt-5 hover:bg-blue-denim transition-all button-wrapper text-blue-denim hover:text-white z-50 group mb-4'
                 classNameIcon={<CopyIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
               >Salin Alamat</Button>
+              <h1 className='font-poppins font-normal text-lg text-center text-white px-3'>Website by @m_farhan2908</h1>
+              <h1 className='font-poppins font-normal text-lg text-center text-white px-3'>Design by @putrilisdaa</h1>
             </div>
           </Fade>
 
