@@ -47,7 +47,7 @@ export default function Home({ params }) {
           />
         </div>
         <div className="max-w-7xl h-full mx-auto flex flex-col justify-center relative bg-black/60 text-white text-center">
-          <div className="mb-64">
+          <div className="">
             <h3 className="font-elsie text-lg">The Wedding Of</h3>
             <h1 className="font-waterfall text-6xl">Farhan & Putri</h1>
             <p className="font-elsie text-lg">07.07.2024</p>
@@ -77,7 +77,7 @@ export default function Home({ params }) {
           <div className="flex flex-col items-center justify-center mt-10">
             <h3 className="font-elsie text-lg">Save The Date</h3>
             <Fade damping={0.2} duration={2000}>
-              <h1 className="font-waterfall text-6xl">Farhan & Putri</h1>
+              <h1 className="font-waterfall font-medium text-6xl">Farhan & Putri</h1>
             </Fade>
             <p className="font-elsie text-lg">07.07.2024</p>
             <Fade delay={300} direction="up" duration={1500}>
@@ -129,7 +129,7 @@ export default function Home({ params }) {
               />
               <div className="p-3">
                 <h1 className='font-waterfall text-5xl'>Putri Lisda Lesmana</h1>
-                <h3 className='font-serif text-lg mt-3'>Putri Ke-1 Dari Bpk. Lesmana & Ibu Yanti Nurhayati</h3>
+                <h3 className='font-serif text-lg mt-3'>Putri Ke-1 Dari Bpk. &#40;Ae&#41; Lesmana & Ibu Yanti Nurhayati</h3>
                 <Button
                   link='https://www.instagram.com/putrilisdaa/'
                   className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
@@ -172,7 +172,7 @@ export default function Home({ params }) {
                 <MapsIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all'} />
               </div>
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
-              <h1 className='font-elsie font-normal text-base text-center'>
+              <h1 className='font-elsie font-normal text-base text-center px-4'>
                 Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;
               </h1>
               <Button
@@ -191,7 +191,7 @@ export default function Home({ params }) {
                 <MapsIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all'} />
               </div>
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
-              <h1 className='font-elsie font-normal text-base text-center'>
+              <h1 className='font-elsie font-normal text-base text-center px-4'>
                 Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;
               </h1>
               <Button
@@ -211,8 +211,8 @@ export default function Home({ params }) {
               className="object-cover w-full h-full"
             />
           </div>
-          <h1 className='text-blue-denim font-bold font-serif text-5xl text-center translate-y-[145px] momen-text'>Momen<span className='block font-waterfall mb-5 momen-text'>Bahagia Kami</span></h1>
-          <h1 className='font-elsie font-normal text-base text-center px-10 mt-20 momen-text translate-y-20'>Menikah bukan perlombaan, bukan soal cepat atau lambat.Tetapi, siapa yang siap mengemban amanah yang besar</h1>
+          <h1 className='text-blue-denim font-bold font-serif text-5xl text-center translate-y-[90px] momen-text'>Momen<span className='block font-waterfall mb-5 momen-text'>Bahagia Kami</span></h1>
+          <h1 className='font-elsie font-normal text-base text-center px-10 mt-12 momen-text translate-y-12 '>Menikah bukan perlombaan, bukan soal cepat atau lambat.Tetapi, siapa yang siap mengemban amanah yang besar</h1>
           <div className="flex items-center justify-center">
             <Image
               width={280}

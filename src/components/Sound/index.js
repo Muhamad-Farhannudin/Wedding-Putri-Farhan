@@ -35,7 +35,7 @@ export default function Sound() {
     <div className='home'>
       <div className='container'>
         <div className='col'>
-          <button onClick={togglePlayPause} className="w-14 h-14 flex justify-center items-center border-4 shadow-lg bg-blue-denim border-white rounded-full fixed bottom-0 left-5 -translate-y-4">
+          <button onClick={togglePlayPause} className="w-14 h-14 flex justify-center items-center border-4 shadow-lg bg-blue-denim border-white rounded-full fixed bottom-0 left-5 -translate-y-4 z-50">
             {isPlaying ?
               <PauseIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all w-[35px] h-[35px]'} /> :
               <PlayIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all w-[40px] h-[40px]'} />
