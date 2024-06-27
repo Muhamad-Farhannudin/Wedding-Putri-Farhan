@@ -4,7 +4,7 @@ import Button from '../Button';
 export default function Form() {
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
-  const [attendance, setAttendance] = useState('Hadir');
+  const [attendance, setAttendance] = useState('');
   const [submissions, setSubmissions] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -13,8 +13,6 @@ export default function Form() {
     if (response.ok) {
       const data = await response.json();
       setSubmissions(data.data);
-      console.log("data.data")
-      console.log(data.data)
     } else {
       console.error('Failed to fetch submissions');
     }
@@ -42,7 +40,7 @@ export default function Form() {
         setSubmissions([...submissions, newSubmission.data]);
         setName('');
         setComment('');
-        setAttendance('Hadir');
+        setAttendance('');
       } else {
         console.error('Failed to submit form');
       }
@@ -50,6 +48,8 @@ export default function Form() {
       setLoading(false); // Set loading ke false setelah proses selesai
     }, 2000); // Durasi loading 2 detik
   };
+
+  const enabled = name.length > 0 && comment.length > 0 && attendance.length > 0;
 
   return (
     <div className="w-full px-10">
@@ -86,8 +86,9 @@ export default function Form() {
             value={attendance}
             onChange={(e) => setAttendance(e.target.value)}
           >
-            <option>Hadir</option>
-            <option>Tidak Hadir</option>
+            <option value="">Pilih Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
@@ -95,14 +96,18 @@ export default function Form() {
         </div>
         <Button
           className="w-full mt-4 bg-blue-denim text-white font-bold py-2 px-4 rounded"
+          type="submit" // Ensure the type is submit
           onClick={handleSubmit}
-        >Kirim Ucapan</Button>
+          disabled={!enabled || loading} // Disable the button based on the conditions
+        >
+          {loading ? 'Mengirim...' : 'Kirim Ucapan'}
+        </Button>
       </form>
       <div className="mt-10 max-h-64 overflow-y-auto">
         {submissions.map((submission) => (
           <div key={submission.id} className="mb-4 p-4 border rounded">
             <div className="flex items-center gap-2 my-2">
-              <h2 className="font-elsie text-lg font-bold">{submission.name}</h2>
+              <h2 className="font-poppins text-lg font-bold">{submission.name}</h2>
               <p className="text-sm text-white bg-blue-denim px-2 py-1 rounded">{submission.attendance}</p>
             </div>
             <p className="text-base text-slate-600">{submission.comment}</p>

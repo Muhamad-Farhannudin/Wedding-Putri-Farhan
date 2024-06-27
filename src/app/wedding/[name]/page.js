@@ -218,13 +218,13 @@ export default function Home({ params }) {
               width={280}
               height={250}
               src="/images/full_cewe.png"
-              className='translate-x-20 translate-y-[65px] z-40'
+              className='translate-x-20 translate-y-[55px] z-40'
             />
             <Image
               width={300}
               height={250}
               src="/images/full_cowo.png"
-              className='-translate-x-10 translate-y-[50px] z-40'
+              className='-translate-x-10 translate-y-[44px] z-40'
             />
           </div>
           <div className="w-full h-8 bg-blue-denim absolute bottom-0"></div>
