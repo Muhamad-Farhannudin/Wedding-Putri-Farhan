@@ -41,7 +41,7 @@ export default function Sound() {
               <PlayIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all w-[40px] h-[40px]'} />
             }
           </button>
-          <audio ref={audioRef} src='/audio/nikah.mp3' />
+          <audio ref={audioRef} src='/audio/Beautiful.mp3' />
         </div>
       </div>
     </div>

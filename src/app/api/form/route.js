@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 // GET all congratulations
 export async function GET() {
   try {
-    const congratulations = await prisma.congratulations.findMany();
+    const congratulations = await prisma.dbWedding.findMany();
     return NextResponse.json(
       {
         success: true,
@@ -31,7 +31,7 @@ export async function POST(request) {
   try {
     const { name, comment, attendance } = await request.json();
 
-    const newCongratulation = await prisma.congratulations.create({
+    const newCongratulation = await prisma.dbWedding.create({
       data: {
         name,
         comment,

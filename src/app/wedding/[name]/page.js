@@ -16,12 +16,10 @@ export default function Home({ params }) {
   const name = decodeURIComponent(params.name);
   const [showInvitation, setShowInvitation] = useState(false);
   const accounts = [
-    { number: '1390611095', name: 'Muhammad Farhannudin', image: '/images/Bank.png' },
-    { number: '2330549893', name: 'Putri Lisda Lesmana', image: '/images/Bank.png' }
+    { number: '1370238002', name: 'Nurfitri Lianti', image: '/images/Bank.png' }
   ];
 
-  const address = 'Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat (Lapang Volly)';
-
+  const address = 'Kp. Gunung Masigit rt04 rw01 Desa Cigugur Girang Kec. Parongpong';
   const [alertVisible, setAlertVisible] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
 
@@ -42,8 +40,9 @@ export default function Home({ params }) {
           <Image
             width={430}
             height={3000}
-            src="/images/couple.jpg"
+            src="/images/foto1.jpg"
             className="object-cover w-full h-full"
+            alt='foto-1'
           />
         </div>
         <div className="max-w-7xl h-full mx-auto flex flex-col justify-center relative bg-black/60 text-white text-center">
@@ -72,16 +71,16 @@ export default function Home({ params }) {
 
   return (
     <Fade damping={0.3} duration={1000}>
-      <div className='w-full'>
+      <div className='w-full scroll-smooth'>
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center justify-center mt-10">
             <h3 className="font-elsie text-lg">Save The Date</h3>
             <Fade damping={0.2} duration={2000}>
-              <h1 className="font-waterfall font-medium text-6xl">Farhan & Putri</h1>
+              <h1 className="font-waterfall font-medium text-6xl">Tedi & Nurfitri</h1>
             </Fade>
-            <p className="font-elsie text-lg">07.07.2024</p>
+            <p className="font-elsie text-lg">10.01.2024</p>
             <Fade delay={300} direction="up" duration={1500}>
-              <CountdownTimer targetDate={'2024-07-07T10:00:00'} />
+              <CountdownTimer targetDate={'2025-01-10T10:00:00'} />
             </Fade>
           </div>
           <div className='flex flex-col items-center justify-center mt-10'>
@@ -104,7 +103,7 @@ export default function Home({ params }) {
             </div>
           </div>
         </div>
-        <Fade delay={200} direction="right" duration={2000}>
+        <Fade delay={200} direction='up' duration={2000}>
           <div className="max-w-7xl mx-auto mt-20 pl-4">
             <div className="flex items-center justify-between">
               <h1 className='text-blue-denim font-poppins uppercase font-bold text-3xl'>Pasangan Mempelai</h1>
@@ -123,38 +122,38 @@ export default function Home({ params }) {
               <Image
                 width={150}
                 height={200}
-                src="/images/perempuan1blur.png"
-                className="object-cover imgputri"
-                alt='putri1'
+                src="/images/foto_cewe_new.jpg"
+                className="object-cover rounded-md shadow-lg shadow-slate-600"
+                alt='Nurfitri'
               />
               <div className="p-3">
-                <h1 className='font-waterfall text-5xl'>Putri Lisda Lesmana</h1>
-                <h3 className='font-serif text-lg mt-3'>Putri Ke-1 Dari Bpk. &#40;Ae&#41; Lesmana & Ibu Yanti Nurhayati</h3>
-                <Button
+                <h1 className='font-waterfall text-5xl'>Nurfitri Lianti, S.Kep. Ners</h1>
+                <h3 className='font-serif text-lg mt-3'>Putri Ke-1 Dari Bpk. Dede Nana Supriatna & Ibu Iim Masdiah</h3>
+                {/* <Button
                   link='https://www.instagram.com/putrilisdaa/'
                   className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                   classNameIcon={<InstagramIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-                >Instagram</Button>
+                >Instagram</Button> */}
               </div>
             </div>
           </Fade>
           <Fade direction="left" duration={2000}>
             <div className="flex items-center justify-between relative mt-[100px]">
               <div className="px-3 pb-10">
-                <h1 className='font-waterfall text-5xl'>Muhamad Farhannudin</h1>
-                <h3 className='font-serif text-lg mt-3'>Putra Ke-2 Dari Bpk. Juna Rahmat & Ibu Nina Firmaeni</h3>
-                <Button
+                <h1 className='font-waterfall text-5xl'>Tedi Rusmana</h1>
+                <h3 className='font-serif text-lg mt-3'>Putra Ke-1 Dari Bpk. Rahmat & Ibu Titin Hayati</h3>
+                {/* <Button
                   link='https://www.instagram.com/m_farhan2908/'
                   className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                   classNameIcon={<InstagramIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
-                >Instagram</Button>
+                >Instagram</Button> */}
               </div>
               <Image
-                width={100}
+                width={150}
                 height={200}
-                src="/images/laki-laki1.png"
-                className="object-cover imgfarhan"
-                alt='farhan1'
+                src="/images/foto_cowo_new.jpg"
+                className="object-cover mr-4 rounded-md shadow-lg shadow-slate-600"
+                alt='tedi'
               />
             </div>
           </Fade>
@@ -165,24 +164,24 @@ export default function Home({ params }) {
           </Fade>
           <Fade direction="down" duration={2000}>
             <div className="bg-white flex flex-col gap-3 py-5 items-center mx-5 mt-5 rounded-xl z-[9999]">
-              <h1 className="font-waterfall text-4xl">Akad Nikah</h1>
-              <h3 className="font-elsie text-xl">Ahad, 7 Juli 2024</h3>
+              <h1 className="font-waterfall text-4xl">Akad Nikah & Resepsi</h1>
+              <h3 className="font-elsie text-xl">Jum'at, 10 Januari 2025</h3>
               <h3 className="font-elsie text-lg">09:00 WIB - Selesai</h3>
               <div className="w-14 h-14">
                 <MapsIcon className={'stroke-blue-denim fill-white cursor-pointer transition-all'} />
               </div>
               <h1 className="font-elsie font-medium text-xl">Kediaman Mempelai Wanita</h1>
               <h1 className='font-elsie font-normal text-base text-center px-4'>
-                Bertempat di Setiabudi Regency jln. Kiara Payung Kp.Sukabaru RT.02 / RW.01 Kec. Parongpong Kab. Bandung Barat &#40;Lapang Volly&#41;
+                Kp. Gunung Masigit rt04 rw01 Desa Cigugur Girang Kec. Parongpong
               </h1>
               <Button
-                link='https://maps.app.goo.gl/Pj5AfYzDTcvMHQUk7'
+                link='https://maps.app.goo.gl/eH8gqCKqAyR8Qdbf9'
                 className='bg-blue-denim mt-5 hover:bg-white transition-all button-wrapper text-white hover:text-blue-denim z-50 group'
                 classNameIcon={<MapsIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
               >Kunjungi Lokasi</Button>
             </div>
           </Fade>
-          <Fade direction="up" duration={1500}>
+          {/* <Fade direction="up" duration={1500}>
             <div className="bg-white flex flex-col gap-3 py-5 items-center mx-5 mt-5 rounded-xl z-[9999]">
               <h1 className="font-waterfall text-4xl">Resepsi</h1>
               <h3 className="font-elsie text-xl">Ahad, 7 Juli 2024</h3>
@@ -200,32 +199,33 @@ export default function Home({ params }) {
                 classNameIcon={<MapsIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
               >Kunjungi Lokasi</Button>
             </div>
-          </Fade>
+          </Fade> */}
         </div>
-        <div className="max-w-7xl mx-auto h-auto py-10 bg-white relative overflow-hidden">
-          <div className="absolute top-0 w-full h-full ">
+        <div className="max-w-7xl mx-auto h-auto pb-32 bg-white relative overflow-hidden">
+          {/* <div className="absolute top-0 w-full h-full ">
             <Image
               width={300}
               height={200}
               src="/images/bg-blur.png"
               className="object-cover w-full h-full"
             />
-          </div>
-          <h1 className='text-blue-denim font-bold font-serif text-5xl text-center translate-y-[90px] momen-text'>Momen<span className='block font-waterfall mb-5 momen-text'>Bahagia Kami</span></h1>
-          <h1 className='font-elsie font-normal text-base text-center px-10 mt-12 momen-text translate-y-12 '>Menikah bukan perlombaan, bukan soal cepat atau lambat.Tetapi, siapa yang siap mengemban amanah yang besar</h1>
+          </div> */}
+          <h1 className='text-blue-denim font-bold font-serif text-5xl text-center mt-5'>Momen<span className='block font-waterfall mb-5'>Bahagia Kami</span></h1>
+          <h1 className='font-elsie font-normal text-base text-center px-10 mt-12'>Menikah bukan perlombaan, bukan soal cepat atau lambat. Tetapi, siapa yang siap mengemban amanah yang besar</h1>
           <div className="flex items-center justify-center">
             <Image
               width={280}
               height={250}
-              src="/images/full_cewe.png"
-              className='translate-x-20 translate-y-[55px] z-40'
+              src="/images/foto_cewe_cowo.jpg"
+              alt='foto_cewe_cowo'
+              className='rounded-tl-full rounded-tr-full rounded-b-3xl shadow-md shadow-slate-300 mt-7'
             />
-            <Image
+            {/* <Image
               width={300}
               height={250}
               src="/images/full_cowo.png"
               className='-translate-x-10 translate-y-[44px] z-40'
-            />
+            /> */}
           </div>
           <div className="w-full h-8 bg-blue-denim absolute bottom-0"></div>
         </div>
@@ -267,8 +267,6 @@ export default function Home({ params }) {
                 className='bg-white mt-5 hover:bg-blue-denim transition-all button-wrapper text-blue-denim hover:text-white z-50 group mb-4'
                 classNameIcon={<CopyIcon className={'icon w-6 h-6 fill-blue-denim stroke-white group-hover:fill-white group-hover:stroke-blue-denim'} />}
               >Salin Alamat</Button>
-              <h1 className='font-poppins font-normal text-lg text-center text-white px-3'>Website by @m_farhan2908</h1>
-              <h1 className='font-poppins font-normal text-lg text-center text-white px-3'>Design by @putrilisdaa</h1>
             </div>
           </Fade>
 

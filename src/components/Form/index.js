@@ -12,6 +12,8 @@ export default function Form() {
     const response = await fetch('/api/form');
     if (response.ok) {
       const data = await response.json();
+      console.log("data")
+      console.log(data)
       setSubmissions(data.data);
     } else {
       console.error('Failed to fetch submissions');
